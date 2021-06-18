@@ -1,0 +1,7 @@
+{
+  "name": "package-dependencies-writer",
+  "version": "1.0.0",
+  "dependencies": {
+    "license-checker": "^25.0.1"
+  }
+}
