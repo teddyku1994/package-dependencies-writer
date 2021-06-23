@@ -2,6 +2,20 @@
 
 This is a simple tool is inspired and build upon [license-checker](https://www.npmjs.com/package/license-checker) to help developers quickly generate a .md file of the direct dependencies of your project.
 
+## Installing (required before usage)
+
+Using npm:
+
+```bash
+$npm install -g license-checker
+```
+
+Using yarn:
+
+```bash
+$yarn global add license-checker
+```
+
 ## Usage
 
 ---
