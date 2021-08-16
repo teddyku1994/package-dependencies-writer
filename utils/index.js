@@ -1,11 +1,12 @@
 const getPackageMap = require("./getPackageMap");
 const getPackageJsonDependencies = require("./getPackageJsonDependencies");
 const getDirectDevDependencies = require("./getDirectDevDependencies");
-const writeMdFile = require("./writeMdFile");
+const { writeMdFile, writeJsonFile } = require("./writeFile");
 
 module.exports = {
   getPackageMap,
   getPackageJsonDependencies,
   getDirectDevDependencies,
   writeMdFile,
+  writeJsonFile,
 };

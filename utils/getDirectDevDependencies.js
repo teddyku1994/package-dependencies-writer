@@ -6,6 +6,7 @@ const getDirectDevDependencies = (packageMap, packJsonDeps) => {
       version: package ? package.version : "unknown",
       license: package ? package.licenses : "unknown",
       repository: package ? package.repository : "unknown",
+      licenseText: package ? package.licenseText : "unknown",
     };
   });
   return directDependencies;
