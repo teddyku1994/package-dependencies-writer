@@ -23,9 +23,10 @@ $yarn global add license-checker
 run the command below to generate the .md file
 
 ```bash
-$sh package-dependencies-writer <project_file_path> <output_doc_file_path> <doc_name>
+$sh package-dependencies-writer <file type> <project_file_path> <output_doc_file_path> <doc_name>
 ```
 
+- file type `(required)`: currently current `md` and `json` argument for file type
 - project_file_path `(required)`: path of the project containing `package.json`
 - output_doc_file_path `(required)`: path to generate the .md document
 - doc_name `(optional, { default: packageDependencies })`: name of the document
