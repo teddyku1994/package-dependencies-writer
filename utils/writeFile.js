@@ -12,11 +12,11 @@ const writeMdFile = (destPath, dependencies, docName) => {
   let content = "# Package Dependencies";
   dependencies.forEach((dep) => {
     const { name, version, license, repository, licenseText } = dep;
-    content += `\n ### ${name}`;
-    content += `\n - version: ${version}`;
-    content += `\n - license: ${license}`;
-    content += `\n - repository: ${repository}`;
-    content += `\n - licenseText: ${licenseText}`;
+    if (name) content += `\n ### ${name}`;
+    if (version) content += `\n - version: ${version}`;
+    if (license) content += `\n - license: ${license}`;
+    if (repository) content += `\n - repository: ${repository}`;
+    // content += `\n - licenseText: ${licenseText}`;
   });
   fs.writeFileSync(filePath, content);
 };

@@ -3,10 +3,11 @@ const getDirectDevDependencies = (packageMap, packJsonDeps) => {
     const package = packageMap.get(dep);
     return {
       name: dep,
-      version: package ? package.version : "unknown",
-      license: package ? package.licenses : "unknown",
-      repository: package ? package.repository : "unknown",
-      licenseText: package ? package.licenseText : "unknown",
+      version: package ? package.version : undefined,
+      license: package ? package.licenses : undefined,
+      repository: package ? package.repository : undefined,
+      licenseText:
+        package && package.fromLicense ? package.licenseText : undefined,
     };
   });
   return directDependencies;
